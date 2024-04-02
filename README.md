@@ -19,7 +19,7 @@ I use `asdf` for all my language and versioning needs. I set the project up with
 - `bundle add jsbundling-rails`
 - `rails javascript:install:esbuild` This will raise an error about an existing `application.js`. You can ignore this error and delete the created `application.js`
 - `bundle add tailwindcss-rails`
-- `rails tailwindcss:install` This will raise a conflict in `bin/dev`. Press `n` to skip the conflict.
+- `rails tailwindcss:install` This will raise a conflict in `bin/dev`. Press `n` to skip the conflict. You must also delete `<%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>` from `app/views/layouts/application.html.erb`
 - `yarn build` While developing, use `yarn build --watch`
 - `rails db:create`
 - `rails s`
