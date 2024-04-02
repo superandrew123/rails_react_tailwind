@@ -16,8 +16,8 @@ config/environments/production.rb
 # Install
 I use `asdf` for all my language and versioning needs. I set the project up with `node v21.7.1` and `ruby 3.3.0`
 - `bundle install`
-- `bundle add jsbundling-rails` This will raise an error about an existing `application.js`. You can ignore this error and delete the created `application.js`
-- `rails javascript:install:esbuild`
+- `bundle add jsbundling-rails`
+- `rails javascript:install:esbuild` This will raise an error about an existing `application.js`. You can ignore this error and delete the created `application.js`
 - `bundle add tailwindcss-rails`
 - `rails tailwindcss:install` This will raise a conflict in `bin/dev`. Press `n` to skip the conflict.
 - `yarn build` While developing, use `yarn build --watch`
